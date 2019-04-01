@@ -1,0 +1,37 @@
+# Docker python environment
+
+Utilize Docker and Makefile to quickly spin Python virutal environment, you will be Python shell prompt when you bring up the container
+
+Dockerfile is created to self contain the Python environment packages, a .venvs directory path is created.
+The .venv stores the python packages that have been installed in the python virtual environment.
+.venvs/workdir-{some_instatnce}/lib/python3.7/site-packages
+
+In addition, the Dockerfile will also load all sourcefile residing in the current directory path into the contaienr
+
+Makefile is create to organize the execution of docker build and docker run 
+vi docker/Dockerfile for more details
+
+## Getting Started
+
+Prerequisites
+* Need Docker
+
+## How to Run
+```
+cd docker_python_template
+make build
+make run
+```
+	
+## List all avialable options in the Makefile
+```
+make help 
+
+help			This help.
+echo			Show current directory path
+build			Builds docker image, with tag "{current directory"
+run			Starts docker image tag "current_directory", creates virtual Python env, install python packages (Pipfile)
+
+```
+* **JT <theartist@gmail.com>** - *Initial work*
+
