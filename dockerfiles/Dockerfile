@@ -7,7 +7,6 @@ RUN pip3 install pipenv
 WORKDIR /workdir
 ENV WORKON_HOME=/workdir/.venvs
 RUN pipenv --python 3
-#RUN echo "machine jiramstdev\nlogin mppm-service\npassword jirabot" > /root/.netrc
 ENV PIPENV_SHELL=bash
 CMD pipenv install && pipenv shell
 
