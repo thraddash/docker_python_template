@@ -1,6 +1,6 @@
 # Docker python environment
 
-Utilize Docker and Makefile to quickly spin Python virutal environment, you will be Python shell prompt when you bring up the container
+Utilize Docker and Makefile to quickly spin Python virutal environment, you will be in Python shell prompt when you bring up the container
 
 Dockerfile is created to self contain the Python environment packages, a .venvs directory path is created.
 The .venv stores the python packages that have been installed in the python virtual environment.
