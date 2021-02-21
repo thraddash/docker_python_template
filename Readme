@@ -8,7 +8,7 @@ The .venv stores the python packages that have been installed in the python virt
 
 In addition, the Dockerfile will also load all sourcefile residing in the current directory path into the contaienr
 
-Makefile is create to organize the execution of docker build and docker run 
+The Makefile is created to organize the execution of docker build and docker run 
 vi docker/Dockerfile for more details
 
 ## Getting Started
